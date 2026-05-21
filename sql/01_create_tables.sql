@@ -32,7 +32,7 @@ CREATE TABLE dbo.him_deficiencies_cleaned (
 
     status VARCHAR(30),
     reassigned_flag CHAR(1),
-    coding_hold_flag(1),
+    coding_hold_flag CHAR(1),
 
     days_open INT,
     aging_bucket VARCHAR(30),
@@ -46,7 +46,7 @@ CREATE TABLE dbo.him_deficiencies_cleaned (
     has_reassignment BIT,
     has_coding_hold BIT,
 
-    open_month VARCHAR(7),
-    completion_month VARCHAR(7)
+    open_month VARCHAR(10),
+    completion_month VARCHAR(10)
 );
 GO

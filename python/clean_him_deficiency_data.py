@@ -231,6 +231,24 @@ print("\nCleaned output path:")
 print(CLEANED_PATH)
 
 # %%
+# -----------------------------
+#Convert boolean reporting flags to 1/0 for SQL Server BIT columns
+# -----------------------------
+
+flag_columns = [
+    "is_open",
+    "is_completed",
+    "is_suspended",
+    "is_over_30_days",
+    "is_past_delinquency_date",
+    "has_reassignment",
+    "has_coding_hold",
+]
+
+for column in flag_columns:
+    df[column] = df[column].astype(int)
+
+# %%
 # -----------------------------------
 # Exported cleaned dataset
 # -----------------------------------

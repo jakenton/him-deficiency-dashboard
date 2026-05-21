@@ -4,6 +4,20 @@
 Purpose: Validate that the cleaned HIM deficiency dataset loaded correctly.
 */
 
+-- Confirm table exists
+SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'him_deficiencies_cleaned';
+
+-- Review table schema
+SELECT
+    column_name,
+    data_type,
+    character_maximum_length
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'him_deficiencies_cleaned'
+ORDER BY ordinal_position;
+
 -- Total row count
 SELECT
     COUNT(*) AS total_rows

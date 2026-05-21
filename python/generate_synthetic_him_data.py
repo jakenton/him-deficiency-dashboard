@@ -257,7 +257,7 @@ for i in range(1, NUM_ROWS + 1):
 
     provider_id = provider["provider_id"]
     provider_name = provider["provider_name"]
-    provider_type = provider["provider_types"]
+    provider_type = provider["provider_type"]
     provider_specialty = provider["specialty"]
     department_name = provider["home_department"]
     provider_risk = provider["deficiency_risk"]
@@ -327,13 +327,13 @@ for i in range(1, NUM_ROWS + 1):
         "provider_risk": provider_risk,
         "deficiency_type": deficiency_type,
         "priority_flag": priority_flag,
-        "open_date": open_date,
+        "open_date": open_date.date(),
         "delinquency_date": delinquency_date.date(),
         "completion_date": (
             completion_date.date()
             if completion_date
-            else None,
-        )
+            else None
+        ),
         "status": status,
         "reassigned_flag": reassigned_flag,
         "coding_hold_flag": coding_hold_flag,

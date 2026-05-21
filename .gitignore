@@ -1,0 +1,86 @@
+# ======================================
+# Python virtual environments
+# ======================================
+
+venv/
+.venv/
+
+# ======================================
+# Python cache files
+# ======================================
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ======================================
+# Jupyter / VSCode notebook artifacts
+# ======================================
+
+.ipynb_checkpoints/
+
+# ======================================
+# VSCode workspace files
+# ======================================
+
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# Optional:
+# Ignore all VSCode settings
+# Uncomment if desired
+
+# .vscode/
+
+# ======================================
+# Operating system files
+# ======================================
+
+.DS_Store
+Thumbs.db
+
+# ======================================
+# Log files
+# ======================================
+
+*.log
+
+# ======================================
+# Temporary files
+# ======================================
+
+*.tmp
+*.bak
+
+# ======================================
+# Environment / secrets
+# ======================================
+
+.env
+
+# ======================================
+# Python package builds
+# ======================================
+
+build/
+dist/
+*.egg-info/
+
+# ======================================
+# SQL Server temporary files
+# ======================================
+
+*.ldf
+*.mdf
+
+# ======================================
+# Generated output files
+# ======================================
+
+# Keep generated datasets OUT of GitHub
+# if they become large later.
+
+# data/raw/*.csv
+# data/cleaned/*.csv
