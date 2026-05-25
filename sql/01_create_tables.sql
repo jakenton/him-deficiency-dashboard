@@ -6,6 +6,9 @@ Purpose: Create the main SQL table for the cleaned synthetics HIM deficiency dat
 This table is designed for SQL Server / T-SQL.
 */
 
+USE [him-deficiency-project];
+GO
+
 DROP TABLE IF EXISTS dbo.him_deficiencies_cleaned;
 GO
 

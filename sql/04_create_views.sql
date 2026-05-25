@@ -96,7 +96,7 @@ SELECT
 
     SUM(
         CASE
-            WHEN is_open - 1
+            WHEN is_open = 1
             THEN 1
             ELSE 0
         END
